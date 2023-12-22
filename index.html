@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Grounded Situation Recognition with Transformers">
+  <meta name="keywords" content="GSRTR, Transformers, GSR, Grounded Situation Recognition, SR, Situation Recognition, Visual Grounding">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GSRTR</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-3 publication-title">Grounded Situation Recognition with Transformers</h1>
+          <p class="is-size-4"; style="color:#808080; margin-top:-20px; margin-bottom:-20px"> BMVC 2021 </p>
+          <br>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://jhcho99.github.io/">Junhyeong Cho</a>*,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=AFPIkj0AAAAJ&hl=en">Youngseok Yoon</a>*,</span>
+            <span class="author-block">
+              <a href="https://dblp.org/search/pid/api?q=author:Hyeonjun_Lee:">Hyeonjun Lee</a>*,</span>
+            <span class="author-block">
+              <a href="https://suhakwak.github.io/">Suha Kwak</a>
+            </span>
+          </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block">( * Equal Contribution )</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Pohang University of Science and Technology (POSTECH)</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://www.bmvc2021-virtualconference.com/assets/papers/0745.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2111.10135"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/jhcho99/GSRTR"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/Prediction.png"  class="center" style="margin-top:-30px"/>
+      <h2 class="subtitle has-text-centered">
+        GSRTR estimates the salient action, entities associated with semantic roles, and their locations
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Abstract. -->
+<hr>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="margin-top:-5px">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Grounded Situation Recognition (GSR) is the task that not only classifies a salient action (verb), but also predicts entities (nouns) associated with semantic roles and their locations in the given image. Inspired by the remarkable success of Transformers in vision tasks, we propose a GSR model based on a Transformer encoder-decoder architecture. The attention mechanism of our model enables accurate verb classification by capturing high-level semantic feature of an image effectively, and allows the model to flexibly deal with the complicated and image-dependent relations between entities for improved noun classification and localization. Our model is the first Transformer architecture for GSR, and achieves the state of the art in every evaluation metric on the SWiG benchmark.
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+<br>
+
+<!-- GSRTR. -->
+<hr>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="margin-top:-5px">GSRTR</h2>
+      </div>
+    </div>
+</section>
+<br>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/Overview.png" class="center"/> <br><br><br>
+    </div>
+  </div>
+</section>
+
+<!-- Experimental Results. -->
+<hr>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="margin-top:-5px">Experimental Results</h2>
+      </div>
+    </div>
+</section>
+<br>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/Quantitative.png" class="center"/> <br><br>
+      <img src="static/images/Qualitative1.png" class="center"/> <br><br>
+      <img src="static/images/Qualitative2.png" class="center"/> <br><br>
+      <img src="static/images/Qualitative3.png" class="center"/> <br><br>
+      <img src="static/images/Retrieval.png" class="center"/>
+    </div>
+  </div>
+</section>
+
+<!-- BibTex. -->
+<hr>
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Citation</h2>
+    <pre><code>@InProceedings{cho2021GSRTR,
+      title={Grounded Situation Recognition with Transformers},
+      author={Junhyeong Cho and Youngseok Yoon and Hyeonjun Lee and Suha Kwak},
+      booktitle={British Machine Vision Conference (BMVC)},
+      year={2021}
+}</code></pre>
+  </div>
+</section>
+<br><br>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/abs/2111.10135">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/jhcho99/GSRTR" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This website template was adapted from <a href="https://keunhong.com/">Keunhong Park</a>'s <a href="https://nerfies.github.io/">Nerfies website</a>. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
