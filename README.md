@@ -17,6 +17,10 @@ If you find our work useful for your research, please cite our paper:
 }
 ````
 
+## Contact
+Junhyeong Cho (jhcho.ai@gmail.com)
+
+
 ## Acknowledgments
 This website template was adapted from [Keunhong Park](https://keunhong.com/)'s [Nerfies Website](https://nerfies.github.io/).
 
